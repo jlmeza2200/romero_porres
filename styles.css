@@ -15,8 +15,8 @@
   .title{
     font-size: 55px;
     font-family: Roboto;
-    color: aliceblue;
-    padding-bottom: 69px;
+    color: #1c1e30;
+    padding-bottom: 89px;
     text-align: center;
   }
 
@@ -34,14 +34,11 @@ li {
     list-style: none;
 }
 
-a{
+
+.navbar1 a{
     color: white;
     text-decoration: none;
     font-size: 26px;
-
-}
-
-.navbar1 a{
     color: aliceblue;
 }
 
@@ -89,7 +86,7 @@ a{
 }
 
 
-@media(max-width:768px){
+@media(max-width:980px){
     .hamburger{
         display: block;
     }
@@ -163,7 +160,7 @@ a{
 
 /* __________________________________________________________________________________________ 
 
-    HEADER SLIDER
+    
  __________________________________________________________________________________________ */
 
 
@@ -191,30 +188,97 @@ a{
     SERVICIOS
  __________________________________________________________________________________________ */
 
- .fa-solid{
+ .fa-scale-balanced, .fa-building, .fa-handshake, .fa-share-nodes{
      color: aliceblue;
      font-size: 45px;
      padding-bottom: 20px;
  }
- #services{
-     background-color: rgb(35, 34, 40);
-     
- }
 
- .service{
-    color: aliceblue;
-    font-family: Roboto;
-    text-align: center;
-    background-color: rgb(0, 0, 0);
-    padding: 150px 0;
+  
+  #cardSkillsContainer {
+    /* padding-top: 69px; */
+  }
+  
+  .cardSkills {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: #1c1e30;
     border-radius: 18px;
-    
- }
+  }
+  
+  .titleSkill {
+    font-family: Roboto;
+    font-size: 26px;
+  }
+  
+  #skillSecondContainer {
+    padding-top: 69px;
+  }
+  
+  .cardContainer {
+    /* cursor: pointer; */
+    transition: transform .5s;
+  }
+  
+  .cardContainer:hover{
+    transform: scale(1.1); 
+  }
+  
+  @media (min-width: 992px) {
+    .cardContainer:hover {
+    transform: scale(1.2); 
+    }
+  }
 
- /* @media(min-width:770px){
-     #services{
-         display: flex;
-         flex-wrap: wrap;
-         justify-content: space-between;
-     }
- } */
+    /* __________________________________________________________________________________________ 
+
+    BLOG
+ __________________________________________________________________________________________ */
+
+#blogContrainer{
+    background-color: #1c1e30;
+}
+
+.minutesTitle{
+    padding-left: 8px;
+    font-style: normal;
+    text-transform: lowercase;
+    font-size: 22px;
+}
+
+.fa-clock{
+    font-size: 23px;
+    margin-top: 5px;
+}
+
+.pharrCard{
+    font-size: 20px;
+}
+
+#btnViewMore{
+    padding-top: 150px;
+    font-size: 36px;
+}
+
+    /* __________________________________________________________________________________________ 
+
+    CONTACTO
+ __________________________________________________________________________________________ */
+
+#contactSection{
+    background-color: aliceblue;
+}
+
+#contactMap{
+    background-color: #1c1e30;
+    padding: 33px 33px;
+}
+
+.fa-phone, .fa-envelope, .fa-linkedin, .fa-instagram-square{
+    padding-right: 10px;
+    margin-top: 6px;
+}
+
+#googleMap{
+    padding-top: 26px;
+}
