@@ -8,13 +8,18 @@
     src: url(./src/images/Roboto-Light.ttf);
   }
 
+  @font-face {
+    font-family: PoiretOne;
+    src: url(./src/images/PoiretOne-Regular.ttf);
+  }
+
   .container {
-      padding: 169px 0;
+      padding: 120px 0;
   }
 
   .title{
     font-size: 55px;
-    font-family: Roboto;
+    font-family: PoiretOne;
     color: #1c1e30;
     padding-bottom: 89px;
     text-align: center;
@@ -26,6 +31,12 @@
     box-sizing: border-box;
 }
 
+
+a:link, a:visited,  a:hover, a:active
+{
+    text-decoration: none;
+}
+
 header{
     background-color: rgb(35, 34, 40)
 }
@@ -35,11 +46,17 @@ li {
 }
 
 
+#navContainer {
+    padding: 15px 10%;
+}
+
 .navbar1 a{
     color: white;
     text-decoration: none;
-    font-size: 26px;
+    font-size: 36px;
     color: aliceblue;
+    font-family: PoiretOne;
+
 }
 
 
@@ -86,7 +103,7 @@ li {
 }
 
 
-@media(max-width:980px){
+@media(max-width:1300px){
     .hamburger{
         display: block;
     }
@@ -102,7 +119,7 @@ li {
     }
 
     .nav-menu{
-        position: fixed;
+        position: absolute;
         left: -1000px;
         top: 70px;
         /* bottom: 100px; */
@@ -137,23 +154,61 @@ li {
     
 }
 
-@media(min-width:768px){
+/* @media(min-width:768px){
     .hr{
         display: none;
     }
-}
+} */
 
 /* __________________________________________________________________________________________ 
 
-    HEADER VIDEO
+    HEADER ANIMACION
  __________________________________________________________________________________________ */
+
+#animationHeader{
+    height: 100vh;
+}
+
+#headerText h2{
+    font-size: 50px;
+    font-family: Roboto;
+
+}
+
+#headerText{
+    padding-top: 69px;
+}
+
+#headerText p{
+    font-size: 18px;
+    font-family: Roboto;
+
+}
+
+/* @media(min-width: 525px){
+    #headerText h2,#headerText p, #btnHeader a {
+        text-align: center;
+    }
+} */
+
+#btnHeader a{
+    color:rgb(255, 200, 54);
+    text-decoration: none;
+    background-color: none;
+    font-family: Roboto;
+    font-size: 19px;
+    font-weight: bold;
+    letter-spacing: 2px;
+} 
 
 #headerInfo{
     /* width: 100%; */
-    height: 600px;
+    height: 900px;
     background-color: rgb(35, 34, 40);
     
 }
+
+
 
 
 
@@ -170,23 +225,199 @@ li {
     NOSOTROS
  __________________________________________________________________________________________ */
 
+@media(min-width: 1064){
+    #aboutText p{
+        font-size: 50px;
+    }
+} 
+
+
  #about{
-     color:rgb(35, 34, 40);
+    background-color: #000000; 
+    color: #fff;
      font-size: 26px;
      font-family: Roboto;
      line-height: 48px;
  }
 
- .romeroTitle{
-     font-weight: bold;
-     color: black;
+ 
+
+ #aboutText h4{
+    font-family: Roboto;
+    font-size: 36px;
+    color: rgb(222, 84, 84);
+    line-height: 22px;
+    font-weight: bold;
+    padding-bottom: 36px;
+
  }
 
+ #aboutText p{
+    font-family: Roboto;
+    font-size: 50px;
+    /* line-height: 62.5px; */
+    font-weight: 300;
+    line-height: 66px;
+    padding-top: 26px;
+
+ }
+
+ #imageContainer{
+    width: 100%;
+    height: 700px;
+    background-image:
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.52), rgba(46, 43, 44, 0.881)),
+    url('./src/images/aboutUs.jpg');
+    /* width: 80%; */
+    /* height: 400px; */
+    background-size: cover;
+    color: white;
+    padding: 20px;
+ }
+
+ #imageContainer p{
+    color: #fff;
+    font-size: 24px;
+    line-height: 33px;
+    letter-spacing: 0.5px;
+    margin: 0px 0px 23px;
+    font-weight: 300;
+    font-family: Roboto;
+
+ }
+
+#howWork{
+    background-color: #000000;
+}
+
+.firstColumn h2{
+    color: #fff;
+    font-size: 40px;
+    line-height: 48px;
+    margin: 0px 0px 23px;
+    font-weight: 300;
+    font-family: Roboto;
+    /* z-index: 100; */
+
+}
+
+.firstColumn h3{
+    font-size: 19px;
+    font-family: Roboto;
+    line-height: 29px;
+    letter-spacing: 2px;
+    margin: 0px 0px 20px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #fff;
+    padding-top: 33px;
+}
+
+.firstColumn p{
+    font-family: Roboto;
+    color: #fff;
+    font-size: 19px;
+    line-height: 29px;
+    margin: 0px 0px 23px;
+    font-weight: 300;
+    padding-top: 26px;
+
+}
+
+.secondColumn h2{
+    color: #000;
+    font-size: 40px;
+    line-height: 48px;
+    margin: 0px 0px 23px;
+    font-weight: 300;
+    font-family: Roboto;
+}
+
+.secondColumn h3{
+    font-size: 19px;
+    font-family: Roboto;
+    line-height: 29px;
+    letter-spacing: 2px;
+    margin: 0px 0px 20px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #fff;
+    padding-top: 33px;
+}
+
+.secondColumn p{
+    font-family: Roboto;
+    color: #fff;
+    font-size: 19px;
+    line-height: 29px;
+    margin: 0px 0px 23px;
+    font-weight: 300;
+    padding-top: 26px;
+}
+
+.underline{
+    border-bottom: rgb(255, 255, 255);
+    border-bottom:solid 6px rgb(215, 90, 90);
+    width:69px;
+    /* height:50px; */
+    margin-top: -16px;
+}
+
+.secondColumn:first-child{
+    margin-top: 118px;
+}
+
+@media(min-width:1198px){
+    .secondColumn:first-child{
+    margin-top: 72px;
+
+}
+}
 
   /* __________________________________________________________________________________________ 
 
     SERVICIOS
  __________________________________________________________________________________________ */
+
+ #services{
+    /* background-color: #1c1e30; */
+    background-color: rgb(35, 34, 40);
+ }
+
+
+
+ #serviceText h4{
+    font-family: Roboto;
+    font-size: 36px;
+    color: rgb(222, 84, 84);
+    line-height: 22px;
+    font-weight: bold;
+    padding-bottom: 36px;
+ }
+
+ /* #serviceText p{
+    font-family: Roboto;
+    font-size: 35px;
+    color: #fff;
+    font-weight: 300;
+    line-height: 43.75px
+ } */
+
+ #serviceText p{
+    font-family: Roboto;
+    color: #fff;
+    font-size: 50px;
+    line-height: 66px;
+    font-weight: 300;
+    padding-top: 23px;
+ }
+
+ @media(max-width:800px){
+    #serviceText p{
+        font-size: 35px;
+    }
+ }
+ 
 
  .fa-scale-balanced, .fa-building, .fa-handshake, .fa-share-nodes{
      color: aliceblue;
@@ -230,35 +461,181 @@ li {
     }
   }
 
+  /* @media(max-width:600px){
+    #image1, #image2, #image3{
+        padding-top: 0px;
+        height: 350px;
+} */
+
+
+
+#image1 h2, #image2 h2, #image3 h2, #image4 h2, #image5 h2, #image6 h2 {
+    color: #fff;
+    font-family: Roboto;
+    font-size: 36px;
+    line-height: 39px;
+    margin: 0px 0px 23px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding-top: 333px;
+    padding-left: 36PX;
+    padding-right: 36PX;
+    /* padding-bottom: 18px; */
+}
+
+#image1 p, #image2 p, #image3 p, #image4 p, #image5 p, #image6 p{
+    color: #fff;
+    font-family: Roboto;
+    font-size: 25px;
+    line-height: 39px;
+    /* margin: 0px 0px 23px; */
+    font-weight: 300;
+    padding-left: 36PX;
+    padding-right: 36PX;
+}
+
+
+#image1 {
+    height: 650px;
+    width: 100%;
+    background-image:
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.52), rgba(46, 43, 44, 0.881)),
+    url('./src/images/bienesRaices.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+#image2{
+    height: 650px;
+    width: 100%;
+    background-image:
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.52), rgba(46, 43, 44, 0.881)),
+    url('./src/images/conformaciónSociedades.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#image3{
+    height: 650px;
+    width: 100%;
+    background-image:
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.52), rgba(46, 43, 44, 0.881)),
+    url('./src/images/fideicomisos.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Restructuración societaria */
+#image4{
+    height: 650px;
+    width: 100%;
+    background-image:
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.52), rgba(46, 43, 44, 0.881)),
+    url('./src/images/restructuracionSocietaria.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Gestión de crisis */
+#image5{
+    height: 650px;
+    width: 100%;
+    background-image:
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.52), rgba(46, 43, 44, 0.881)),
+    url('./src/images/gestionCrisis.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Negociación de deudas */
+#image6{
+    height: 650px;
+    width: 100%;
+    background-image:
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.52), rgba(46, 43, 44, 0.881)),
+    url('./src/images/negociacionDeuda.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+
+
+
     /* __________________________________________________________________________________________ 
 
     BLOG
  __________________________________________________________________________________________ */
 
-#blogContrainer{
-    background-color: #1c1e30;
-}
+#newsColumn1{
+    background-color: #1e1f24;
+    /* height: 850px; */
+    padding-right: 12%;
+    padding-left: 12%;
+    padding-bottom: 130px;
 
-.minutesTitle{
-    padding-left: 8px;
-    font-style: normal;
-    text-transform: lowercase;
-    font-size: 22px;
-}
+} 
 
-.fa-clock{
-    font-size: 23px;
-    margin-top: 5px;
-}
+#newsColumn2{
+    background-color: black;
+    padding-bottom: 130px;
+    padding-right: 12%;
+    padding-left: 12%;
 
-.pharrCard{
-    font-size: 20px;
-}
+} 
 
-#btnViewMore{
-    padding-top: 150px;
+
+.newsContainer h2{
+    color: rgb(222, 84, 84);
     font-size: 36px;
+    font-family: Roboto;
+    /* padding-left: 30%; */
+    padding-top: 89px;
+    padding-bottom: 23px;
+    font-weight: bold;
 }
+
+.newsContainer h3{
+    color: #fff;
+    /* padding-left: 30%; */
+    font-size: 26px;
+    line-height: 37px;
+    margin: 0px 0px 23px;
+    font-family: Roboto;
+    font-weight: 300;
+    padding-top: 46px;
+}
+
+@media(min-width:1200px){   
+    .newsContainer h3{
+        font-size: 44px;
+        line-height: 69px;
+
+    }
+}
+
+.btnNews a{
+    color:rgb(255, 200, 54);
+    text-decoration: none;
+    background-color: none;
+    font-family: Roboto;
+    font-size: 19px;
+    font-weight: bold;
+    letter-spacing: 2px;   
+    /* padding-left: 30%; */
+    text-transform: uppercase;
+    
+}
+
+
+#newsColumn2{
+    padding-top: 52px;
+}
+
+
+
 
     /* __________________________________________________________________________________________ 
 
@@ -266,19 +643,168 @@ li {
  __________________________________________________________________________________________ */
 
 #contactSection{
-    background-color: aliceblue;
+    background-color: #fff;
 }
 
 #contactMap{
     background-color: #1c1e30;
     padding: 33px 33px;
+    border-radius: 13px;
 }
 
 .fa-phone, .fa-envelope, .fa-linkedin, .fa-instagram-square{
     padding-right: 10px;
     margin-top: 6px;
+    font-family: PoiretOne;
+    font-size: 19px;
+    font-weight: 100px;
+}
+
+.contactInfo p{
+    font-family: PoiretOne;
+    font-size: 23px;
+    font-weight: 100px;
+    
+}
+
+#contactMap h4{
+    font-family: PoiretOne;
+    font-weight: bold;
+
 }
 
 #googleMap{
     padding-top: 26px;
 }
+
+#exampleInputEmail1{
+    padding: 18px 10px;
+    box-shadow: 8px 10px 10px -4px rgba(0, 0, 0, 0.518);
+    border: 3px solid rgba(0, 0, 0, 0.146);
+}
+
+#formTextArea{
+    border-radius: 12px;
+    width: 630px;
+    margin-left: -24px;
+}
+
+#messageForm{
+    padding: 18px 10px;
+    padding-bottom: 250px;
+    box-shadow: 8px 10px 10px -4px rgba(0, 0, 0, 0.518);
+    border: 3px solid rgba(0, 0, 0, 0.146);
+}
+
+
+#formContainer{
+    margin-top: -78px;
+}
+
+
+@media(max-width:1400px){
+    #map{
+        width: 450px;
+    }
+}
+
+@media(max-width:1200px){
+    #map{
+        width: 380px;
+    }
+}
+
+@media(max-width:991px){
+    #map{
+        width: 500px;
+    }
+}
+
+@media(max-width:768px){
+    #map{
+        width: 400px;
+    }
+}
+
+@media(max-width:465px){
+    #map{
+        width: 300px;
+    }
+}
+
+    /* __________________________________________________________________________________________ 
+
+    FOOTER
+ __________________________________________________________________________________________ */
+
+ #footer {
+  
+    padding-top: 69px; 
+    padding-bottom: 5px; 
+    background-color: #1c1e30;
+    color: #fff;
+   
+   }
+   
+   #textFooterContainer {
+     padding-top: 69px;
+   }
+   
+   #titleFooter {
+     font-family: PoiretOne;
+     font-size: 14px;
+   
+   }
+   
+   #footerContainer {
+     max-width: 300px;
+   }
+/* 
+   .footerMenu{
+       max-width: 300px;
+       padding-top: 25px;
+   } */
+
+   .footerLink{
+       font-family: PoiretOne;
+       font-size: 19px;
+       color: #fff;
+       padding: 22px;
+       text-decoration: none;
+   }
+
+   #socialIcons{
+       padding: 26px 0;;
+   }
+
+   #socialIcons i{
+       font-size: 25px;
+       padding: 0 22px;
+       color: #fff;
+   }
+   
+   @media(max-width:698px){
+
+   }
+
+   #socialIcons a {
+       text-decoration: none;
+   }
+
+   #footer h2{
+       font-family: PoiretOne;
+       font-weight: bold;
+       font-size: 33px;
+   }
+
+   .copyright{
+    font-family: PoiretOne;
+
+   }
+
+   .copyright2{
+    font-family: PoiretOne;
+    margin-top: -22px;
+   }
+
+  

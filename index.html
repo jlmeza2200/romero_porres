@@ -41,29 +41,29 @@
   <body>
     <header>
       <!-- MENU  -->
-      <nav class="navbar1 text-white">
+      <nav id="navContainer" class="navbar1 text-white">
         <!-- LOGO -->
-        <a href="#" class="nav-branding">Romero Porres</a>
+        <a href="#" class="nav-branding">RomeroPorres</a>
 
         <ul class="nav-menu">
-          <li class="navItem">
+          <!-- <li class="navItem">
             <a href="#" class="nav-link">Home</a>
+          </li> -->
+          <div class="hr"></div>
+          <li class="navItem">
+            <a href="#about" class="nav-link">Somos</a>
           </li>
           <div class="hr"></div>
           <li class="navItem">
-            <a href="#" class="nav-link">Somos</a>
+            <a href="#SkillsContainer" class="nav-link">Servicios</a>
           </li>
           <div class="hr"></div>
           <li class="navItem">
-            <a href="#" class="nav-link">Servicios</a>
+            <a href="#blogContrainer" class="nav-link">Blog</a>
           </li>
           <div class="hr"></div>
           <li class="navItem">
-            <a href="#" class="nav-link">Blog</a>
-          </li>
-          <div class="hr"></div>
-          <li class="navItem">
-            <a href="#" class="nav-link">Contacto</a>
+            <a href="#contactSection" class="nav-link">Contacto</a>
           </li>
         </ul>
 
@@ -75,139 +75,204 @@
         </div>
       </nav>
 
-      <!-- HEADER VIDEO -->
-      <div id="headerInfo">
-        <div id="headerVideo">
-          <!-- <video
-            src="./src/images/pageLangVideo720P.mp4"
-            autoplay
-            muted
-            loop
-          ></video> -->
+      <!-- HEADER ANIMADO + FRASE -->
+      <div id="animationHeader">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6"></div>
+            <div
+              id="headerText"
+              class="col-xs-12 col-sm-12 col-md-12 col-lg-6 text-white"
+            >
+              <h2>
+                Building powerful digital <br />
+                products together
+              </h2>
+              <p>
+                Realize the value of your digital assets by turning
+                transformative ideas into <br />
+                practical, impactful solutions.
+              </p>
+              <div id="btnHeader">
+                <a href="">COMENCEMOS A HABLAR</a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </header>
 
     <!-- SECCION SOMOS -->
-    <div class="container" id="about">
-      <h4></h4>
-      <p>
-        En <span class="romeroTitle">RomeroPorres</span>, nos sustenta la misión
-        de ser referentes jurídicos para la creación de nuevos negocios en todo
-        el territorio de nuestra Argentina Somos una consultora jurídica
-        conformada por un equipo de letrados asociados con presencia en todo
-        nuestro país con un soporte de profesionales de diversas especialidades
-        orientados en nuestra esencia, que es colaborar en construir negocios
-        confiables en Argentina. Con base en la Ciudad Autónoma de Buenos Aires,
-        México, trabajamos de manera colaborativa junto a grupo de inversores,
-        empresas, emprendedores, OSCs y gobiernos para que en forma conjunta
-        crear estructuras jurídicas suficientes que, asegurando el éxito del
-        negocio. Estamos convencidos que los inversores y organizaciones líderes
-        son aquellas que logran integrar estrategias jurídicas eficaces que
-        tengan como fin el desarrollo de negocios sustentables. Desde
-        <span class="romeroTitle">RomeroPorres </span>buscamos contribuir al
-        cumplimiento del pilar fundamental de los negocios que es la confianza.
-      </p>
+    <div id="about">
+      <div class="container" id="aboutText">
+        <h4>SOMOS</h4>
+        <div class="underline"></div>
+        <p>
+          Competir, Crecer y Prosperar <br />
+          en un mundo acelerado
+        </p>
+      </div>
     </div>
 
-    <!-- SECCION SERVICIOS -->
-    <div id="SkillsContainer">
+    <!-- Img -->
+    <div id="imageContainer">
       <div class="container">
-        <h2 id="habilidadesTitle" class="title text-center">Servicios</h2>
+        <div class="row">
+          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
+            <p>
+              En <span class="">RomeroPorres</span>, nos sustenta la misión de
+              ser referentes jurídicos para la creación de nuevos negocios en
+              todo el territorio de nuestra Argentina Somos una consultora
+              jurídica conformada por un equipo de letrados asociados con
+              presencia en todo nuestro país con un soporte de profesionales de
+              diversas especialidades orientados en nuestra esencia, que es
+              colaborar en construir negocios confiables en Argentina.<!-- Con base
+              en la Ciudad Autónoma de Buenos Aires, México, trabajamos de
+              manera colaborativa junto a grupo de inversores, empresas,
+              emprendedores, OSCs y gobiernos para que en forma conjunta crear
+              estructuras jurídicas suficientes que, asegurando el éxito del
+              negocio. Estamos convencidos que los inversores y organizaciones
+              líderes son aquellas que logran integrar estrategias jurídicas
+              eficaces que tengan como fin el desarrollo de negocios
+              sustentables. Desde <span class="">RomeroPorres </span>buscamos
+              contribuir al cumplimiento del pilar fundamental de los negocios
+              que es la confianza. -->
+            </p>
+          </div>
+          <div class="col"></div>
+        </div>
+      </div>
+    </div>
 
-        <div id="cardSkillsContainer">
-          <div class="text-center">
-            <!-- Col 1-3 -->
-            <div class="row d-flex justify-content-center">
-              <!-- Servicio #1 -->
-              <div
-                class="cardContainer col-10 col-sm-8 col-md-2 col-lg-2 col-xl-4 pb-4"
-              >
-                <div>
-                  <div class="cardSkills">
-                    <i class="fa-solid fa-scale-balanced"></i>
-                    <h5 class="titleSkill pt-3 text-white">Fideicomisos</h5>
-                  </div>
-                </div>
+    <!-- Cómo trabajamos -->
+    <div id="howWork">
+      <div class="container">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-5">
+              <div class="firstColumn">
+                <h2>COMO TRABAJAMOS</h2>
+                <h3>CONSTRUIDO PARA EL IMPACTO</h3>
+                <div class="underline"></div>
+                <p>
+                  Nuestros ojos están siempre en su juego final. Guiados por 15
+                  años de estrategia y ejecución práctica, hacemos las preguntas
+                  correctas, anticipamos obstáculos y creamos planes prácticos.
+                  Lo que sale conecta puntos en su negocio con resultados que
+                  puede medir.
+                </p>
               </div>
 
-              <!-- Servicio #2 -->
-              <div
-                class="cardContainer col-10 col-sm-8 col-md-2 col-lg-2 col-xl-4 pb-4"
-              >
-                <div>
-                  <div class="cardSkills">
-                    <i class="fa-solid fa-building"></i>
-                    <h5 class="titleSkill pt-3 text-white">Bienes raíces</h5>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Servicio #3 -->
-              <div
-                class="cardContainer col-10 col-sm-8 col-md-2 col-lg-2 col-xl-4 pb-4"
-              >
-                <div>
-                  <div class="cardSkills">
-                    <i class="fa-solid fa-handshake"></i>
-                    <h5 class="titleSkill pt-3 text-white">
-                      Conformación de sociedades
-                    </h5>
-                  </div>
-                </div>
+              <!--  -->
+              <div class="firstColumn">
+                <h3>LO HACEMOS ÁGIL</h3>
+                <div class="underline"></div>
+                <p>
+                  Hay una forma en que esto debería funcionar: la tuya. Ponemos
+                  a las personas adecuadas en el trabajo, no a más personas,
+                  adaptando nuestro enfoque a los objetivos de cada proyecto.
+                  Obtiene la fuerza de banco que necesita sin el equipaje y los
+                  gastos generales de una gran consultoría.
+                </p>
               </div>
             </div>
+            <div class="col-1"></div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-5">
+              <div class="secondColumn">
+                <!-- <h2>How We Work</h2> -->
+                <h3>PASIÓN POR EL ARTESANÍA</h3>
+                <div class="underline"></div>
 
-            <!-- Col 4-6 -->
-            <div
-              id="skillSecondContainer"
-              class="row d-flex justify-content-center"
-            >
-              <!-- Habilidad #4 -->
-              <div
-                class="cardContainer col-10 col-sm-8 col-md-2 col-lg-4 col-xl-4 pb-4"
-              >
-                <div>
-                  <div class="cardSkills">
-                    <i class="fa-solid fa-share-nodes"></i>
-                    <h5 class="titleSkill pt-3 text-white">
-                      Reestructuración societaria
-                    </h5>
-                  </div>
-                </div>
+                <p>
+                  Somos personas reales impulsadas a crear cosas
+                  extraordinarias. Abordamos la tecnología con estándares
+                  intransigentes y el ojo de un artesano. Tratamos el desafío de
+                  nuestro cliente como si fuera nuestro, nunca satisfechos hasta
+                  que se resuelve... y algo más.
+                </p>
               </div>
 
-              <!-- Habilidad #5 -->
-              <div
-                class="cardContainer col-10 col-sm-8 col-md-2 col-lg-4 col-xl-4 pb-4"
-              >
-                <div>
-                  <div class="cardSkills">
-                    <i class="fa-solid fa-aperture"></i>
-                    <i class="fa-solid fa-share-nodes"></i>
+              <!--  -->
+              <div class="secondColumn">
+                <h3>VELOCIDAD DE MERCADO</h3>
+                <div class="underline"></div>
 
-                    <h5 class="titleSkill pt-3 text-white">
-                      Gestión de crisis
-                    </h5>
-                  </div>
-                </div>
+                <p>
+                  Consigue impactar más rápido. Traemos a todos a la mesa desde
+                  el principio (estrategia, diseño, desarrollo) para crear y
+                  ejecutar planes al mismo tiempo. Nuestros equipos trabajan en
+                  tierra en cadencia con el suyo, reduciendo el tiempo y la
+                  complejidad en cada paso.
+                </p>
               </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-              <!-- Habilidad #6 -->
-              <div
-                class="cardContainer col-10 col-sm-8 col-md-2 col-lg-4 col-xl-4 pb-4"
-              >
-                <div>
-                  <div class="cardSkills">
-                    <i class="fa-solid fa-messages"></i>
-                    <i class="fa-solid fa-share-nodes"></i>
+    <div id="services">
+      <div class="container" id="serviceText">
+        <h4>SERVICIOS</h4>
+        <div class="underline"></div>
+        <p>
+          Diverse Talent and Expertise <br />
+          Help You Continually Adapt and <br />
+          Create Value
+        </p>
+      </div>
+    </div>
 
-                    <h5 class="titleSkill pt-3 text-white">
-                      Negociación de deudas
-                    </h5>
-                  </div>
-                </div>
-              </div>
+    <!-- Images Container -->
+    <!-- Services 1-3 -->
+    <div id="servicesImagesContainer">
+      <div class="">
+        <div class="row d-flex">
+          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4 g-0">
+            <div id="image1">
+              <h2>BIENES RAICES</h2>
+              <p>Level up your legacy</p>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4 g-0">
+            <div id="image2">
+              <h2>CONFORMACIÓN DE SOCIEDADES</h2>
+              <p>Realize your product vision</p>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4 g-0">
+            <div id="image3">
+              <h2>FIDEICOMISOS</h2>
+              <p>
+                Accelerate your path to creating breakthrough digital products
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Services 4-6 -->
+    <div id="servicesImagesContainer">
+      <div class="">
+        <div class="row d-flex">
+          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4 g-0">
+            <div id="image4">
+              <h2>Reestructuración societaria</h2>
+              <p>Level up your legacy</p>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4 g-0">
+            <div id="image5">
+              <h2>Gestión de crisis</h2>
+              <p>Realize your product vision</p>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4 g-0">
+            <div id="image6">
+              <h2>Negociación de deudas</h2>
+              <p>
+                Accelerate your path to creating breakthrough digital products
+              </p>
             </div>
           </div>
         </div>
@@ -215,97 +280,50 @@
     </div>
 
     <!-- SECCION BLOG -->
-    <div id="blogContrainer">
-      <div class="container">
-        <h2 class="text-white text-center title">Blog</h2>
+    <div id="newsSection">
+      <div class="">
+        <div class="row">
+          <div id="newsColumn1" class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
+            <div class="newsContainer">
+              <h2>NEWS</h2>
+              <div class="underline"></div>
+              <h3>
+                How IT modernization positioned CaringBridge to respond in times
+                of crisis
+              </h3>
+              <div class="btnNews">
+                <a href="#">Leer más</a>
+              </div>
+            </div>
+          </div>
 
-        <!-- Card Section -->
-        <div class="text-center">
-          <div class="row">
-            <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
-              <div class="card">
-                <img
-                  src="./src/images/bienes_raices.jpg"
-                  class="card-img-top"
-                  alt="..."
-                  width="100%"
-                  height="250px"
-                />
-                <div class="card-body">
-                  <h5 class="card-title">
-                    How to Create a Slide Transition Between “Pages” in JS...
-                  </h5>
-                  <div class="d-flex justify-content-center pt-3 pb-2">
-                    <i class="fa-solid fa-clock"></i>
-                    <p class="minutesTitle">5 min lectura</p>
-                  </div>
-                  <p class="card-text pb-3 pharrCard">
-                    In this tutorial, you’re going to learn how to slide between
-                    pages. By the word “pages”, I don’t mean we’re going to
-                    slide from say index.html over
-                  </p>
-                  <a href="#" class="btn btn-primary">LEER MÁS</a>
+          <!-- Right Column -->
+          <div id="newsColumn2" class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
+            <div class="container">
+              <div class="newsContainer">
+                <h3>
+                  Nerdery Recognized as One of Built In Chicago’s Best Midsize
+                  Companies to Work For
+                </h3>
+                <div class="btnNews">
+                  <a href="#">Leer más</a>
                 </div>
               </div>
             </div>
-            <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
-              <div class="card">
-                <img
-                  src="./src/images/fideicomiso.png"
-                  class="card-img-top"
-                  alt="..."
-                  width="100%"
-                  height="250px"
-                />
-                <div class="card-body">
-                  <h5 class="card-title">
-                    How to Extract Metadata from Music Files with JavaScript...
-                  </h5>
-                  <div class="d-flex justify-content-center pt-3 pb-2">
-                    <i class="fa-solid fa-clock"></i>
-                    <p class="minutesTitle">3 min lectura</p>
-                  </div>
-                  <p class="card-text pb-3 pharrCard">
-                    Learning how to drag & drop an image into your project can
-                    seem like a complicated task. In fact, it can be if you’ve
-                    never done it before
-                  </p>
-                  <a href="#" class="btn btn-primary">LEER MÁS</a>
-                </div>
-              </div>
-            </div>
-            <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
-              <div class="card">
-                <img
-                  src="./src/images/sociedad-comercial.jpg"
-                  class="card-img-top"
-                  alt="..."
-                  width="100%"
-                  height="250px"
-                />
-                <div class="card-body">
-                  <h5 class="card-title">
-                    How to Create a Slide Transition Between “Pages” in Js...
-                  </h5>
-                  <div class="d-flex justify-content-center pt-3 pb-2">
-                    <i class="fa-solid fa-clock"></i>
-                    <p class="minutesTitle">6 min lectura</p>
-                  </div>
-                  <p class="card-text pb-3 pharrCard">
-                    There comes a time in a developer’s journey when they want
-                    to build something more complex than the typical to-do list
-                    or Calculator
-                  </p>
-                  <a href="#" class="btn btn-primary">LEER MÁS</a>
+
+            <!--  -->
+            <div class="">
+              <div class="newsContainer">
+                <h3>
+                  Nerdery Named a Stevie® Award Winner for Cloud Migration as a
+                  Service
+                </h3>
+                <div class="btnNews">
+                  <a href="#">Leer más</a>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-
-        <!-- Btn Ver más -->
-        <div id="btnViewMore">
-          <a href="#" class="btn btn-primary">VER MÁS</a>
         </div>
       </div>
     </div>
@@ -317,28 +335,28 @@
           <div class="row">
             <div
               id="contactMap"
-              class="col-xs-12 col-sm-12 col-md-12 col-lg-5 text-white"
+              class="col-xs-12 col-sm-12 col-md-12 col-lg-6 text-white"
             >
               <h4>Rompero Porrés - Estudio jurídico</h4>
-              <p>Anchorena 1626</p>
-              <p>CABA. CP 1425</p>
+              <p class="contactInfo">Anchorena 1626</p>
+              <p class="contactInfo">CABA. CP 1425</p>
               <!-- Phone -->
-              <div class="d-flex">
+              <div class="d-flex contactInfo">
                 <i class="fa-solid fa-phone"></i>
                 <p>+54 9 11 62344913</p>
               </div>
               <!-- e-mail -->
-              <div class="d-flex">
+              <div class="d-flex contactInfo">
                 <i class="fa-solid fa-envelope"></i>
                 <p>franciso@romeroporres.com.ar</p>
               </div>
               <!-- linkedin -->
-              <div class="d-flex">
+              <div class="d-flex contactInfo">
                 <i class="fa-brands fa-linkedin"></i>
                 <p>@romeroporres.com.ar</p>
               </div>
               <!-- Instagram -->
-              <div class="d-flex">
+              <div class="d-flex contactInfo">
                 <i class="fa-brands fa-instagram-square"></i>
                 <p>@romeroporres.com.ar</p>
               </div>
@@ -346,8 +364,9 @@
               <!-- Google Map  -->
               <div id="googleMap">
                 <iframe
+                  id="map"
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.5015795735712!2d-58.4031485!3d-34.5914761!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca9aff4e7fd7%3A0x37fb0224e9e2d3b7!2sDr.%20Tom%C3%A1s%20Manuel%20de%20Anchorena%201626%2C%20C1425ELL%20CABA!5e0!3m2!1ses!2sar!4v1656288376158!5m2!1ses!2sar"
-                  width="450"
+                  width="550"
                   height="450"
                   style="border: 0"
                   allowfullscreen=""
@@ -356,11 +375,13 @@
                 ></iframe>
               </div>
             </div>
-            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-7">
-              <h2 class="text-center">Contáctanos</h2>
+            <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
+            <!--  -->
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-5">
+              <h2 class="text-center title">Contáctanos</h2>
 
               <!-- Formulario de contacto -->
-              <form>
+              <form id="formContainer">
                 <div class="mb-3">
                   <label for="exampleInputEmail1" class="form-label"></label>
                   <input
@@ -382,19 +403,28 @@
                   />
                 </div>
                 <div class="mb-3">
-                  <label for="exampleInputPassword1" class="form-label"></label>
+                  <label for="exampleInputEmail1" class="form-label"></label>
                   <input
                     type="email"
                     class="form-control"
-                    id="exampleInputPassword1"
+                    id="exampleInputEmail1"
                     placeholder="E-mail"
                   />
                 </div>
-                <div class="mb-3 form-check">
-                  <textarea name="" id="formTextArea" cols="30" rows="10">
-Mensaje</textarea
-                  >
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label"></label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="messageForm"
+                    placeholder="Mensaje"
+                  />
                 </div>
+                <!-- <div class="mb-3 form-check">
+                  <textarea name="" id="formTextArea" cols="30" rows="10">
+                    Mensaje</textarea
+                  >
+                </div> -->
                 <button type="submit" class="btn btn-primary">Enviar</button>
               </form>
             </div>
@@ -403,9 +433,49 @@ Mensaje</textarea
       </div>
     </div>
 
+    <!--______________________________________________________________________________________________________
+            
+                                            SECCION FOOTER
+            ___________________________________________________________________________________________________-->
+    <div id="footer">
+      <div class="text-center">
+        <h2>Romero Porrés</h2>
+        <!-- Footer Menu -->
+        <div class="footerMenu d-flex justify-content-center">
+          <a class="footerLink" href="">SOMOS</a>
+          <a class="footerLink" href="">SERVICIOS</a>
+          <a class="footerLink" href="">BLOG</a>
+          <a class="footerLink" href="">CONTACTO</a>
+        </div>
+        <!-- Social Icon -->
+        <div id="socialIcons">
+          <!-- Linkedin -->
+          <a href="#">
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+          <!-- Instagram -->
+          <a href="#">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a href="#">
+            <i class="fa-brands fa-whatsapp"></i>
+          </a>
+        </div>
+        <!--Copyright  -->
+        <div>
+          <p class="copyright">™ Romero Porrés 2022</p>
+          <p class="copyright2">Private Policy | Terms & Conditions</p>
+        </div>
+      </div>
+    </div>
+
     <!-- Js de menu -->
     <script src="./menu.js"></script>
     <!-- JS de slider -->
     <!-- <script src="./slider.js"></script> -->
+
+    <!-- RainLines Js -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="./rainLines.js"></script>
   </body>
 </html>
