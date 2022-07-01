@@ -41,14 +41,16 @@
   <body>
     <header>
       <!-- MENU  -->
-      <nav id="navContainer" class="navbar1 text-white">
+      <nav id="navContainer" class="navbar1 container text-white">
         <!-- LOGO -->
-        <a href="#" class="nav-branding">RomeroPorres</a>
+        <h2 class="navItem" id="logo">RomeroPorres</h2>
+        <!-- <a href="#" class="nav-branding">RomeroPorres</a> -->
 
         <ul class="nav-menu">
           <!-- <li class="navItem">
             <a href="#" class="nav-link">Home</a>
           </li> -->
+          <h2 class="logoMenu">RomeroPorres</h2>
           <div class="hr"></div>
           <li class="navItem">
             <a href="#about" class="nav-link">Somos</a>
@@ -84,17 +86,30 @@
               id="headerText"
               class="col-xs-12 col-sm-12 col-md-12 col-lg-6 text-white"
             >
-              <h2>
-                Building powerful digital <br />
-                products together
-              </h2>
-              <p>
-                Realize the value of your digital assets by turning
-                transformative ideas into <br />
-                practical, impactful solutions.
-              </p>
-              <div id="btnHeader">
-                <a href="">COMENCEMOS A HABLAR</a>
+              <div id="headerTextContainer">
+                <h2>Building powerful digital products together</h2>
+                <p>
+                  Realize the value of your digital assets by turning
+                  transformative ideas into <br />
+                  practical, impactful solutions.
+                </p>
+                <div id="btnHeader">
+                  <a class="cool-link" href="">COMENCEMOS A HABLAR</a>
+                </div>
+                <!--  -->
+                <!-- <div class="svg-wrapper">
+                  <svg
+                    height="60"
+                    width="500"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <rect class="shape1" height="60" width="500" />
+                    <rect class="shape2" height="60" width="500" />
+                    <div id="btnHeader" class="text">
+                      <a href="">COMENCEMOS A HABLAR</a>
+                    </div>
+                  </svg>
+                </div> -->
               </div>
             </div>
           </div>
@@ -109,7 +124,7 @@
         <div class="underline"></div>
         <p>
           Competir, Crecer y Prosperar <br />
-          en un mundo acelerado
+          en un mundo cambiante
         </p>
       </div>
     </div>
@@ -329,59 +344,16 @@
     </div>
 
     <!-- SECCION CONTACTO -->
-    <div id="contactSection">
+    <div id="contactContainer">
       <div class="container">
-        <div class="container">
-          <div class="row">
-            <div
-              id="contactMap"
-              class="col-xs-12 col-sm-12 col-md-12 col-lg-6 text-white"
-            >
-              <h4>Rompero Porrés - Estudio jurídico</h4>
-              <p class="contactInfo">Anchorena 1626</p>
-              <p class="contactInfo">CABA. CP 1425</p>
-              <!-- Phone -->
-              <div class="d-flex contactInfo">
-                <i class="fa-solid fa-phone"></i>
-                <p>+54 9 11 62344913</p>
-              </div>
-              <!-- e-mail -->
-              <div class="d-flex contactInfo">
-                <i class="fa-solid fa-envelope"></i>
-                <p>franciso@romeroporres.com.ar</p>
-              </div>
-              <!-- linkedin -->
-              <div class="d-flex contactInfo">
-                <i class="fa-brands fa-linkedin"></i>
-                <p>@romeroporres.com.ar</p>
-              </div>
-              <!-- Instagram -->
-              <div class="d-flex contactInfo">
-                <i class="fa-brands fa-instagram-square"></i>
-                <p>@romeroporres.com.ar</p>
-              </div>
+        <h2 class="contactTitle">Ready to get started?</h2>
 
-              <!-- Google Map  -->
-              <div id="googleMap">
-                <iframe
-                  id="map"
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.5015795735712!2d-58.4031485!3d-34.5914761!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca9aff4e7fd7%3A0x37fb0224e9e2d3b7!2sDr.%20Tom%C3%A1s%20Manuel%20de%20Anchorena%201626%2C%20C1425ELL%20CABA!5e0!3m2!1ses!2sar!4v1656288376158!5m2!1ses!2sar"
-                  width="550"
-                  height="450"
-                  style="border: 0"
-                  allowfullscreen=""
-                  loading="lazy"
-                  referrerpolicy="no-referrer-when-downgrade"
-                ></iframe>
-              </div>
-            </div>
-            <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
-            <!--  -->
-            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-5">
-              <h2 class="text-center title">Contáctanos</h2>
-
-              <!-- Formulario de contacto -->
-              <form id="formContainer">
+        <!-- Formulario de contacto -->
+        <form id="formContainer">
+          <div class="">
+            <div class="row">
+              <div class="col">
+                <!-- Nombre -->
                 <div class="mb-3">
                   <label for="exampleInputEmail1" class="form-label"></label>
                   <input
@@ -392,16 +364,31 @@
                     placeholder="Nombre"
                   />
                 </div>
+                <!-- Compañia -->
                 <div class="mb-3">
                   <label for="exampleInputEmail1" class="form-label"></label>
                   <input
-                    type="email"
+                    type="text"
                     class="form-control"
                     id="exampleInputEmail1"
                     aria-describedby="emailHelp"
+                    placeholder="Compañía"
+                  />
+                </div>
+              </div>
+
+              <div class="col">
+                <!-- Apellido -->
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label"></label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="exampleInputEmail1"
                     placeholder="Apellido"
                   />
                 </div>
+                <!-- Email -->
                 <div class="mb-3">
                   <label for="exampleInputEmail1" class="form-label"></label>
                   <input
@@ -411,25 +398,32 @@
                     placeholder="E-mail"
                   />
                 </div>
-                <div class="mb-3">
-                  <label for="exampleInputEmail1" class="form-label"></label>
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="messageForm"
-                    placeholder="Mensaje"
-                  />
-                </div>
-                <!-- <div class="mb-3 form-check">
-                  <textarea name="" id="formTextArea" cols="30" rows="10">
-                    Mensaje</textarea
-                  >
-                </div> -->
-                <button type="submit" class="btn btn-primary">Enviar</button>
-              </form>
+              </div>
+
+              <!-- Cómo te podemos ayudar? -->
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label"></label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="exampleInputEmail1"
+                  placeholder="Cómo te podemos ayudar?"
+                />
+              </div>
             </div>
           </div>
-        </div>
+
+          <!-- <div class="mb-3 form-check">
+            <textarea name="" id="formTextArea" cols="30" rows="10">
+              Mensaje</textarea
+            >
+          </div> -->
+          <div id="btnFormContainer">
+            <button type="submit" id="btnForm" class="btn btn-primary">
+              ENVIAR
+            </button>
+          </div>
+        </form>
       </div>
     </div>
 
@@ -439,7 +433,7 @@
             ___________________________________________________________________________________________________-->
     <div id="footer">
       <div class="text-center">
-        <h2>Romero Porrés</h2>
+        <h2>RomeroPorres</h2>
         <!-- Footer Menu -->
         <div class="footerMenu d-flex justify-content-center">
           <a class="footerLink" href="">SOMOS</a>
@@ -464,7 +458,9 @@
         <!--Copyright  -->
         <div>
           <p class="copyright">™ Romero Porrés 2022</p>
-          <p class="copyright2">Private Policy | Terms & Conditions</p>
+          <p class="copyright2">
+            Políticas de privacidad | Tterminos & condiciones
+          </p>
         </div>
       </div>
     </div>
