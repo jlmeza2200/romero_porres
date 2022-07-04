@@ -1,104 +1,35 @@
-<!-- SECCION CONTACTO -->
-<div id="contactSection">
-  <div class="container">
-    <div class="container">
-      <div class="row">
-        <div
-          id="contactMap"
-          class="col-xs-12 col-sm-12 col-md-12 col-lg-6 text-white"
-        >
-          <h4>Rompero Porrés - Estudio jurídico</h4>
-          <p class="contactInfo">Anchorena 1626</p>
-          <p class="contactInfo">CABA. CP 1425</p>
-          <!-- Phone -->
-          <div class="d-flex contactInfo">
-            <i class="fa-solid fa-phone"></i>
-            <p>+54 9 11 62344913</p>
-          </div>
-          <!-- e-mail -->
-          <div class="d-flex contactInfo">
-            <i class="fa-solid fa-envelope"></i>
-            <p>franciso@romeroporres.com.ar</p>
-          </div>
-          <!-- linkedin -->
-          <div class="d-flex contactInfo">
-            <i class="fa-brands fa-linkedin"></i>
-            <p>@romeroporres.com.ar</p>
-          </div>
-          <!-- Instagram -->
-          <div class="d-flex contactInfo">
-            <i class="fa-brands fa-instagram-square"></i>
-            <p>@romeroporres.com.ar</p>
-          </div>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      .sticky {
+        position: fixed;
+        top: 0;
+        width: 100%;
+      }
 
-          <!-- Google Map  -->
-          <div id="googleMap">
-            <iframe
-              id="map"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.5015795735712!2d-58.4031485!3d-34.5914761!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca9aff4e7fd7%3A0x37fb0224e9e2d3b7!2sDr.%20Tom%C3%A1s%20Manuel%20de%20Anchorena%201626%2C%20C1425ELL%20CABA!5e0!3m2!1ses!2sar!4v1656288376158!5m2!1ses!2sar"
-              width="550"
-              height="450"
-              style="border: 0"
-              allowfullscreen=""
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-            ></iframe>
-          </div>
-        </div>
-        <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
-        <!--  -->
-        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-5">
-          <h2 class="text-center title">Contáctanos</h2>
+      .sticky + .content {
+        padding-top: 60px;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      window.onscroll = function () {
+        myFunction();
+      };
 
-          <!-- Formulario de contacto -->
-          <form id="formContainer">
-            <div class="mb-3">
-              <label for="exampleInputEmail1" class="form-label"></label>
-              <input
-                type="text"
-                class="form-control"
-                id="exampleInputEmail1"
-                aria-describedby="emailHelp"
-                placeholder="Nombre"
-              />
-            </div>
-            <div class="mb-3">
-              <label for="exampleInputEmail1" class="form-label"></label>
-              <input
-                type="email"
-                class="form-control"
-                id="exampleInputEmail1"
-                aria-describedby="emailHelp"
-                placeholder="Apellido"
-              />
-            </div>
-            <div class="mb-3">
-              <label for="exampleInputEmail1" class="form-label"></label>
-              <input
-                type="email"
-                class="form-control"
-                id="exampleInputEmail1"
-                placeholder="E-mail"
-              />
-            </div>
-            <div class="mb-3">
-              <label for="exampleInputEmail1" class="form-label"></label>
-              <input
-                type="text"
-                class="form-control"
-                id="messageForm"
-                placeholder="Mensaje"
-              />
-            </div>
-            <!-- <div class="mb-3 form-check">
-                <textarea name="" id="formTextArea" cols="30" rows="10">
-                  Mensaje</textarea
-                >
-              </div> -->
-            <button type="submit" class="btn btn-primary">Enviar</button>
-          </form>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+      var navbar = document.getElementById("navContainer");
+      var sticky = navbar.offsetTop;
+
+      function myFunction() {
+        if (window.pageYOffset >= sticky) {
+          navbar.classList.add("sticky");
+        } else {
+          navbar.classList.remove("sticky");
+        }
+      }
+    </script>
+  </body>
+</html>
