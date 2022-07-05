@@ -41,6 +41,22 @@ li {
     list-style: none;
 }
 
+#logoRP{
+	text-transform: capitalize;
+	font-size: 30px;
+	text-decoration: none;
+}
+
+.navMenu a{
+	text-decoration: none;
+
+}
+
+#loglogoRP:hover{
+	color: #fff;
+}
+
+
   #navContainer {
 	background-color: #1e1f24;
 	padding: 0 6%;
@@ -77,6 +93,7 @@ li {
 
 .navItem:hover:after {
     transform: scaleX(1);
+	color: #fff;
    }
 
 #logo{
@@ -94,6 +111,10 @@ li {
     font-weight: bold;
     /* margin-top: -150px; */
     padding-bottom: 69px;
+}
+
+.logoMenu:hover{
+    color: #1e1f24;
 }
 
 @media(min-width:1300px){

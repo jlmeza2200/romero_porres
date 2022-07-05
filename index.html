@@ -40,43 +40,64 @@
       integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
       crossorigin="anonymous"
     ></script>
+
+    <!-- Estilos de menu fixed -->
+    <style>
+      .sticky {
+        position: fixed;
+        top: 0;
+        width: 100%;
+      }
+
+      .sticky + .content {
+        padding-top: 60px;
+      }
+    </style>
   </head>
   <body>
     <header>
       <!-- MENU  -->
-      <nav id="navContainer" class="navbar1 container text-white">
+      <nav id="navContainer" class="navbar1 text-white">
         <!-- LOGO -->
-        <h2 class="navItem" id="logo">RomeroPorres</h2>
-        <!-- <a href="#" class="nav-branding">RomeroPorres</a> -->
+        <div class="pt-2 pb-2">
+          <!-- <h2 class="navItem" id="logo">RomeroPorres</h2> -->
+          <!-- <h2 class="text-white" id="">RomeroPorres</h2> -->
+          <!-- <a href="#" class="nav-branding">RomeroPorres</a> -->
+          <!-- <h2 class="navItem" id="logo">RomeroPorres</h2> -->
+          <a id="logoRP" class="navItem" href="./index.html">RomeroPorres</a>
+        </div>
 
-        <ul class="nav-menu">
-          <!-- <li class="navItem">
-            <a href="#" class="nav-link">Home</a>
-          </li> -->
-          <h2 class="logoMenu">RomeroPorres</h2>
-          <div class="hr"></div>
-          <li class="navItem">
-            <a href="#about" class="nav-link">Somos</a>
-          </li>
-          <div class="hr"></div>
-          <li class="navItem">
-            <a href="#services" class="nav-link">Servicios</a>
-          </li>
-          <div class="hr"></div>
-          <li class="navItem">
-            <a href="#newsSection" class="nav-link">News</a>
-          </li>
-          <div class="hr"></div>
-          <li class="navItem">
-            <a href="#contactContainer" class="nav-link">Contacto</a>
-          </li>
-        </ul>
+        <div class="container d-flex justify-content-end pt-2 pb-2">
+          <ul class="nav-menu">
+            <!-- <li class="navItem">
+                <a href="#" class="nav-link">Home</a>
+              </li> -->
+            <!-- <h2 class="logoMenu">RomeroPorres</h2> -->
+            <a class="logoMenu" href="./index.html">RomeroPorres</a>
+            <div class="hr"></div>
+            <li class="navItem">
+              <a href="#about" class="nav-link">Somos</a>
+            </li>
+            <div class="hr"></div>
+            <li class="navItem">
+              <a href="#services" class="nav-link">Servicios</a>
+            </li>
+            <div class="hr"></div>
+            <li class="navItem">
+              <a href="#newsSection" class="nav-link">News</a>
+            </li>
+            <div class="hr"></div>
+            <li class="navItem">
+              <a href="#contactContainer" class="nav-link">Contacto</a>
+            </li>
+          </ul>
 
-        <!-- Hamburger Menu -->
-        <div class="hamburger">
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
+          <!-- Hamburger Menu -->
+          <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
         </div>
       </nav>
 
@@ -84,7 +105,11 @@
       <div id="animationHeader">
         <div class="container">
           <div class="row">
-            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6"></div>
+            <!-- Columna de animación -->
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
+              <!-- <section class="rain"></section> -->
+            </div>
+            <!-- Columna de Texto -->
             <div
               id="headerText"
               class="col-xs-12 col-sm-12 col-md-12 col-lg-6 text-white"
@@ -481,13 +506,31 @@
       </div>
     </div>
 
+    <!-- Script js de menu Fixed with scroll -->
+    <script>
+      window.onscroll = function () {
+        myFunction();
+      };
+
+      var navbar = document.getElementById("navContainer");
+      var sticky = navbar.offsetTop;
+
+      function myFunction() {
+        if (window.pageYOffset >= sticky) {
+          navbar.classList.add("sticky");
+        } else {
+          navbar.classList.remove("sticky");
+        }
+      }
+    </script>
+
     <!-- Js de menu -->
     <script src="./menu.js"></script>
     <!-- JS de slider -->
     <!-- <script src="./slider.js"></script> -->
 
     <!-- RainLines Js -->
-    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <script src="./rainLines.js"></script>
+    <!-- <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> -->
+    <!-- <script src="./rainLines.js"></script> -->
   </body>
 </html>
